@@ -1,4 +1,5 @@
 ---
+const pageTitle = "Landing Page"
 ---
 
 <html lang='en'>
@@ -7,12 +8,12 @@
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href='/'>Home</a>
     <a href='/about'>About</a>
-	<a href='/hobbies'>Hobbies</a>
-    <h1>My Astro Frontpage</h1>
+    <a href='/hobbies'>Hobbies</a>
+    <h1>{pageTitle}</h1>
   </body>
 </html>

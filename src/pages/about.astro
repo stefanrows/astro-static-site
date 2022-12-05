@@ -1,22 +1,27 @@
+---
+const pageTitle = "Who Am I?"
+---
+
 <body>
   <a href='/'>Home</a>
   <a href='/about'>About</a>
   <a href='/hobbies'>Hobbies</a>
-  <h1>Who Am I?</h1>
+  <h1>{pageTitle}</h1>
   <p>
     My name is Stefan and I build my first Astro project using <a
       href='https://wwww.ceos3c.com'>ceos3c.com</a
-    >!
+    > !
   </p>
 </body>
-
-<!-- 
-1. Create a new page called hobbies.astro inside of the pages folder.
-2. Add <body> tags to it.
-3. Add an <h1> with "My Hobbies".
-4. Add an <ul> below the <h1>.
-Add your hobbies inside of <li> elements inside of the <ul> tags.
-5. Add navigation links and update the links in index.astro and about.astro 
-to include your new hobbies.astro page!
-
- -->
+<style>
+  body {
+    font-family: sans-serif;
+  }
+  a {
+    color: orange;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>

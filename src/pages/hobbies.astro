@@ -1,13 +1,21 @@
+---
+const pageTitle = "My Hobbies"
+
+const hobbies = [
+  "Playing Video Games",
+  "Watching Movies",
+  "Playing Sports",
+  "Reading",
+  "Listening to Music",
+]
+---
+
 <body>
   <a href='/'>Home</a>
   <a href='/about'>About</a>
   <a href='/hobbies'>Hobbies</a>
-  <h1>My Hobbies</h1>
+  <h1>{pageTitle}</h1>
   <ul>
-    <li>Playing Video Games</li>
-    <li>Watching Movies</li>
-    <li>Playing Sports</li>
-    <li>Reading</li>
-    <li>Listening to Music</li>
+    {hobbies.map((hobby) => <li>{hobby}</li>)}
   </ul>
 </body>
