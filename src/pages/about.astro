@@ -1,27 +1,11 @@
 ---
-const pageTitle = "Who Am I?"
+import MainLayout from "../layouts/MainLayout.astro"
 ---
 
-<body>
-  <a href='/'>Home</a>
-  <a href='/about'>About</a>
-  <a href='/hobbies'>Hobbies</a>
-  <h1>{pageTitle}</h1>
+<MainLayout title='Who Am I?'>
   <p>
     My name is Stefan and I build my first Astro project using <a
       href='https://wwww.ceos3c.com'>ceos3c.com</a
     > !
   </p>
-</body>
-<style>
-  body {
-    font-family: sans-serif;
-  }
-  a {
-    color: orange;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
+</MainLayout>
